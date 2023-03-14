@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Database</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <center><h1>Add New Student</h1></center>
+    
+    <form id="add-student-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="Age" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <label for="class">Class:</label>
+      <input type="text" id="class" name="class" required>
+      <label for="gender">Gender:</label>
+      <input type="text" id="gender" name="Gender" required>
+      <center>
+        <button type="submit">Add Student</button>
+      </center>
+      
+    </form>
+    <h1>Student List</h1>
+    <table id="student-table">
+      
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
